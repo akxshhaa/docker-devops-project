@@ -11,19 +11,10 @@ built with Python Flask and containerized using Docker multi-stage builds.
 - Server: Alpine Linux
 
 ## How to run
-```bash
 docker build -t portfolio-docker .
 docker run -p 5000:5000 portfolio-docker
-```
+
 Then open http://localhost:5000
 
 ## Project by
 Shritamaacharyee - Computer Science Student
-```
-
-Press **Ctrl + S**, then:
-```
-git add .
-```
-```
-git commit -m "update README with project documentation"
