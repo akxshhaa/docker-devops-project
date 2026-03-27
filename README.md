@@ -1,29 +1,29 @@
-# Docker Optimization Project
+# Portfolio Docker - AI Resume Builder
 
-##  Objective
-To build an ultra-lightweight Docker image (<10MB) for serving a static portfolio using Alpine Linux and multi-stage builds.
+## What is this project?
+A full stack web application that serves a developer portfolio, 
+built with Python Flask and containerized using Docker multi-stage builds.
 
----
+## Tech Stack
+- Frontend: HTML/CSS
+- Backend: Python Flask
+- Container: Docker (multi-stage build)
+- Server: Alpine Linux
 
-## ⚙️ Tech Stack
-- Docker
-- Alpine Linux
-- BusyBox HTTP Server
-- HTML & CSS
-
----
-
-##  Approach
-
-1. Used **multi-stage builds** to separate build and runtime environments
-2. Used **Alpine Linux** for lightweight base image
-3. Used **BusyBox** for minimal HTTP server
-4. Optimized image size using `.dockerignore`
-
----
-
-##  How to Run
-
+## How to run
 ```bash
-docker build -t portfolio .
-docker run -p 8080:8080 portfolio
+docker build -t portfolio-docker .
+docker run -p 5000:5000 portfolio-docker
+```
+Then open http://localhost:5000
+
+## Project by
+Shritamaacharyee - Computer Science Student
+```
+
+Press **Ctrl + S**, then:
+```
+git add .
+```
+```
+git commit -m "update README with project documentation"
