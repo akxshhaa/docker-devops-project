@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shritamaacharyee | CS Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      padding: 40px 20px;
+    }
+    .terminal-bar {
+      background: #1e1e1e;
+      border-radius: 10px 10px 0 0;
+      padding: 10px 20px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .dot { width: 12px; height: 12px; border-radius: 50%; }
+    .red { background: #ff5f57; }
+    .yellow { background: #febc2e; }
+    .green { background: #28c840; }
+    .terminal-body {
+      background: #1a1a1a;
+      border-radius: 0 0 10px 10px;
+      padding: 30px;
+      max-width: 750px;
+      margin: 0 auto 30px;
+      border: 1px solid #333;
+    }
+    .prompt { color: #28c840; }
+    .command { color: #00bfff; }
+    h1 { font-size: 2.2em; color: #00bfff; margin: 10px 0 5px; }
+    .subtitle { color: #888; margin-bottom: 20px; }
+    .section-title {
+      color: #febc2e;
+      margin: 25px 0 10px;
+      font-size: 1em;
+      letter-spacing: 2px;
+    }
+    .card {
+      background: #111;
+      border-left: 3px solid #00bfff;
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 0 8px 8px 0;
+    }
+    .skill-tag {
+      display: inline-block;
+      background: #0d2137;
+      color: #00bfff;
+      border: 1px solid #00bfff;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin: 4px;
+      font-size: 0.85em;
+    }
+    .project-title { color: #28c840; font-size: 1.1em; }
+    .badge {
+      background: #febc2e;
+      color: #0d0d0d;
+      font-size: 0.7em;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 8px;
+      font-weight: bold;
+    }
+    .footer { color: #444; text-align: center; margin-top: 30px; font-size: 0.8em; }
+  </style>
+</head>
+<body>
+  <div style="max-width:750px; margin: 0 auto;">
+    <div class="terminal-bar">
+      <div class="dot red"></div>
+      <div class="dot yellow"></div>
+      <div class="dot green"></div>
+      <span style="color:#888; font-size:0.85em; margin-left:10px">shritamaacharyee@portfolio ~ </span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">$ </span><span class="command">whoami</span></p>
+      <h1>Shritamaacharyee</h1>
+      <p class="subtitle">Computer Science Student &nbsp;|&nbsp; Python Developer &nbsp;|&nbsp; Docker Enthusiast</p>
+      <p class="section-title"># ABOUT</p>
+      <div class="card">
+        <p>CS student passionate about building real-world projects. Currently exploring containerization, optimization and backend development.</p>
+      </div>
+      <p class="section-title"># SKILLS</p>
+      <div class="card">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Linux</span>
+        <span class="skill-tag">HTML/CSS</span>
+        <span class="skill-tag">Git</span>
+      </div>
+      <p class="section-title"># PROJECTS</p>
+      <div class="card">
+        <p class="project-title">Portfolio Container Optimization <span class="badge">THIS PROJECT</span></p>
+        <p style="color:#888; margin-top:8px; font-size:0.9em">Packaged a static portfolio into a Docker image under 10MB using multi-stage builds and nginx:alpine. Reduced image size by 95% compared to standard builds.</p>
+      </div>
+      <p style="color:#444; margin-top:25px;"><span class="prompt">$ </span>▋</p>
+    </div>
+    <div class="footer">
+      &lt;/&gt; built with HTML · served with nginx · containerized with Docker
+    </div>
+  </div>
+</body>
+</html>
