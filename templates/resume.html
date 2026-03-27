@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Resume Builder</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #0d0d0d;
+      color: #e0e0e0;
+      padding: 40px 20px;
+    }
+    h1 { color: #00bfff; text-align: center; margin-bottom: 30px; }
+    .form-card {
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    input, textarea {
+      width: 100%;
+      background: #111;
+      border: 1px solid #00bfff;
+      color: #e0e0e0;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 8px 0 16px;
+      font-family: 'Courier New', monospace;
+    }
+    label { color: #febc2e; }
+    button {
+      width: 100%;
+      background: #00bfff;
+      color: #0d0d0d;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    #result {
+      background: #111;
+      border-left: 3px solid #28c840;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 0 8px 8px 0;
+      white-space: pre-wrap;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>$ AI Resume Builder</h1>
+  <div class="form-card">
+    <label>Your Name</label>
+    <input type="text" id="name" placeholder="Shritamaacharyee"/>
+    <label>Your Skills</label>
+    <input type="text" id="skills" placeholder="Python, Docker, HTML"/>
+    <label>Your Experience</label>
+    <textarea id="experience" rows="3" placeholder="CS Student, built Docker projects..."></textarea>
+    <button onclick="generateResume()">Generate AI Resume ✨</button>
+    <div id="result"></div>
+  </div>
+  <script>
+    async function generateResume() {
+      const name = document.getElementById('name').value;
+      const skills = document.getElementById('skills').value;
+      const experience = document.getElementById('experience').value;
+      const result = document.getElementById('result');
+      result.style.display = 'block';
+      result.innerText = 'Generating your resume...';
+      const response = await fetch('/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, skills, experience })
+      });
+      const data = await response.json();
+      result.innerText = data.resume;
+    }
+  </script>
+</body>
+</html>
