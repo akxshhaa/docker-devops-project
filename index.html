@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <title>Shritamaacharyee | CS Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shritama Acharyee | DevOps Portfolio</title>
+
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
       font-family: 'Courier New', monospace;
       background-color: #0d0d0d;
       color: #e0e0e0;
       padding: 40px 20px;
+      line-height: 1.6;
     }
+
+    .container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
     .terminal-bar {
       background: #1e1e1e;
       border-radius: 10px 10px 0 0;
@@ -19,28 +29,42 @@
       gap: 8px;
       align-items: center;
     }
+
     .dot { width: 12px; height: 12px; border-radius: 50%; }
     .red { background: #ff5f57; }
     .yellow { background: #febc2e; }
     .green { background: #28c840; }
+
     .terminal-body {
       background: #1a1a1a;
       border-radius: 0 0 10px 10px;
       padding: 30px;
-      max-width: 750px;
-      margin: 0 auto 30px;
       border: 1px solid #333;
+      margin-bottom: 30px;
     }
+
     .prompt { color: #28c840; }
     .command { color: #00bfff; }
-    h1 { font-size: 2.2em; color: #00bfff; margin: 10px 0 5px; }
-    .subtitle { color: #888; margin-bottom: 20px; }
+
+    h1 {
+      font-size: 2.2em;
+      color: #00bfff;
+      margin: 10px 0 5px;
+    }
+
+    .subtitle {
+      color: #888;
+      margin-bottom: 20px;
+      font-size: 0.95em;
+    }
+
     .section-title {
       color: #febc2e;
       margin: 25px 0 10px;
-      font-size: 1em;
+      font-size: 0.9em;
       letter-spacing: 2px;
     }
+
     .card {
       background: #111;
       border-left: 3px solid #00bfff;
@@ -48,17 +72,24 @@
       margin: 10px 0;
       border-radius: 0 8px 8px 0;
     }
+
     .skill-tag {
       display: inline-block;
       background: #0d2137;
       color: #00bfff;
       border: 1px solid #00bfff;
-      padding: 4px 14px;
+      padding: 4px 12px;
       border-radius: 20px;
       margin: 4px;
-      font-size: 0.85em;
+      font-size: 0.8em;
     }
-    .project-title { color: #28c840; font-size: 1.1em; }
+
+    .project-title {
+      color: #28c840;
+      font-size: 1.1em;
+      font-weight: bold;
+    }
+
     .badge {
       background: #febc2e;
       color: #0d0d0d;
@@ -68,25 +99,48 @@
       margin-left: 8px;
       font-weight: bold;
     }
-    .footer { color: #444; text-align: center; margin-top: 30px; font-size: 0.8em; }
+
+    .footer {
+      color: #444;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8em;
+    }
   </style>
 </head>
+
 <body>
-  <div style="max-width:750px; margin: 0 auto;">
+
+  <div class="container">
+
     <div class="terminal-bar">
       <div class="dot red"></div>
       <div class="dot yellow"></div>
       <div class="dot green"></div>
-      <span style="color:#888; font-size:0.85em; margin-left:10px">shritamaacharyee@portfolio ~ </span>
+      <span style="color:#888; font-size:0.85em; margin-left:10px">
+        shritama@portfolio ~
+      </span>
     </div>
+
     <div class="terminal-body">
+
       <p><span class="prompt">$ </span><span class="command">whoami</span></p>
-      <h1>Shritamaacharyee</h1>
-      <p class="subtitle">Computer Science Student &nbsp;|&nbsp; Python Developer &nbsp;|&nbsp; Docker Enthusiast</p>
+
+      <h1>Shritama Acharyee</h1>
+      <p class="subtitle">
+        Computer Science Student | Python Developer | DevOps & Docker Enthusiast
+      </p>
+
+      <!-- ABOUT -->
       <p class="section-title"># ABOUT</p>
       <div class="card">
-        <p>CS student passionate about building real-world projects. Currently exploring containerization, optimization and backend development.</p>
+        <p>
+          Computer Science student focused on building scalable and efficient systems.
+          Currently exploring containerization, backend development, and deployment optimization.
+        </p>
       </div>
+
+      <!-- SKILLS -->
       <p class="section-title"># SKILLS</p>
       <div class="card">
         <span class="skill-tag">Python</span>
@@ -95,73 +149,33 @@
         <span class="skill-tag">HTML/CSS</span>
         <span class="skill-tag">Git</span>
       </div>
+
+      <!-- PROJECT -->
       <p class="section-title"># PROJECTS</p>
       <div class="card">
-        <p class="project-title">Portfolio Container Optimization <span class="badge">THIS PROJECT</span></p>
-        <p style="color:#888; margin-top:8px; font-size:0.9em">Packaged a static portfolio into a Docker image under 10MB using multi-stage builds and nginx:alpine. Reduced image size by 95% compared to standard builds.</p>
+        <p class="project-title">
+          Docker Image Optimization
+          <span class="badge">Featured</span>
+        </p>
+
+        <p style="color:#888; margin-top:8px; font-size:0.9em">
+          Built and optimized a Docker container for a static portfolio using multi-stage builds 
+          with Alpine Linux and nginx. Achieved a final image size under 10MB, improving efficiency 
+          and reducing resource usage significantly.
+        </p>
       </div>
-      <p style="color:#444; margin-top:25px;"><span class="prompt">$ </span>▋</p>
+
+      <p style="color:#444; margin-top:25px;">
+        <span class="prompt">$ </span>▋
+      </p>
+
     </div>
+
     <div class="footer">
-      &lt;/&gt; built with HTML · served with nginx · containerized with Docker
+      &lt;/&gt; built with HTML · served with nginx · containerized using Docker
     </div>
+
   </div>
-=======
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akanksha Jain | DevOps Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header>
-    <h1>Akanksha Jain</h1>
-    <p>DevOps Enthusiast | Cloud & Containerization</p>
-  </header>
-
-  <main>
-
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am a 3rd year BTech student with strong interest in DevOps, Docker,
-        and cloud technologies. I focus on building optimized, scalable systems.
-      </p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>Docker & Containerization</li>
-        <li>Linux & Shell Scripting</li>
-        <li>Git & Version Control</li>
-        <li>HTML, CSS</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Project</h2>
-      <p>
-        Built a lightweight Docker image (&lt;10MB) using Alpine Linux and BusyBox
-        with multi-stage builds to optimize performance and reduce size.
-      </p>
-    </section>
-    <button onclick="showMessage()">Click Me</button>
-<p id="msg"></p>
-
-<script>
-function showMessage() {
-  document.getElementById("msg").innerText = "Dockerized successfully!";
-}
-</script>
-
-  </main>
-
-  <footer>
-    <p>© 2026 Akanksha Jain</p>
-  </footer>
 
 </body>
 </html>
