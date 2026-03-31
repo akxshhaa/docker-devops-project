@@ -17,4 +17,4 @@ docker run -p 5000:5000 portfolio-docker
 Then open http://localhost:5000
 
 ## Project by
-Shritamaacharyee - Computer Science Student
+Shritamaacharyee And Akankshajain - Computer Science Student
