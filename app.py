@@ -32,7 +32,7 @@ def generate():
         data=payload,
         headers={
             'Content-Type': 'application/json',
-            'x-api-key': 'YOUR_API_KEY_HERE',
+            'x-api-key': 'CLAUDE_API_KEY',
             'anthropic-version': '2023-06-01'
         }
     )
