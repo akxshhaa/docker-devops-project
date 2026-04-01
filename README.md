@@ -14,7 +14,7 @@ built with Python Flask and containerized using Docker multi-stage builds.
 docker build -t portfolio-docker .
 docker run -p 5000:5000 portfolio-docker
 
-Then open http://localhost:5000
+
 
 ## Project by
 Shritamaacharyee And Akankshajain - Computer Science Student
